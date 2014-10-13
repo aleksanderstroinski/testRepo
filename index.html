@@ -3,7 +3,7 @@
 <body>
 
 <p id="demo">Time</p>
-<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+<button onclick="getElementById(navigator.geolocation.getCurrentPosition(onSuccess, onError)).innerHTML=Date()">What is the time?</button>
 
 
 <script>
@@ -29,7 +29,7 @@ function onError(error) {
           'message: ' + error.message + '\n');
 }
 
-navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
 </script>
 
 
